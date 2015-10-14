@@ -21,8 +21,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
-        setContentView(R.layout.activity_main_collapsing);
-//        setContentView(R.layout.activity_main_parallax);
+//        setContentView(R.layout.activity_main_collapsing);
+        setContentView(R.layout.activity_main_parallax);
         CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle("Title");
