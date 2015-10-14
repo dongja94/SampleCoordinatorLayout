@@ -1,6 +1,7 @@
 package com.begentgroup.samplecoordinatorlayout;
 
 import android.os.Bundle;
+import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -20,11 +21,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 //        setContentView(R.layout.activity_main);
-//        setContentView(R.layout.activity_main_collapsing);
-        setContentView(R.layout.activity_main_parallax);
-//        CollapsingToolbarLayout collapsingToolbar =
-//                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-//        collapsingToolbar.setTitle("Title");
+        setContentView(R.layout.activity_main_collapsing);
+//        setContentView(R.layout.activity_main_parallax);
+        CollapsingToolbarLayout collapsingToolbar =
+                (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
+        collapsingToolbar.setTitle("Title");
         coordinatorLayout = (CoordinatorLayout)findViewById(R.id.coordinatorLayout);
         setSupportActionBar((Toolbar)findViewById(R.id.toolbar));
 
